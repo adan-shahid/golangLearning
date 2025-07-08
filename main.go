@@ -19,24 +19,27 @@ func main(){
 	// fmt.Printf("Decimal : %d", number)
 	hotel_name := "The Gopher Hotel"
 	fmt.Println("Hotel Name: "+hotel_name)
-	var roomsAvailable int
-	var rooms, roomsOccupied = 100, rand.Intn(100)
-	roomsAvailable = rooms - roomsOccupied
-	fmt.Println(roomsAvailable, "Rooms Available")
-	age_of_person()
-	email_send()
-	assignment()
+	// var roomsAvailable int
+	// var rooms, roomsOccupied = 100, rand.Intn(100)
+	// roomsAvailable = rooms - roomsOccupied
+	// fmt.Println(roomsAvailable, "Rooms Available")
+	// age_of_person()
+	// email_send()
+	// assignment()
+	// johnPrice := computePrice(148.0, 2)
+	// fmt.Println("John:", johnPrice)
+
 
 }
 
-func age_of_person(){
-	var agePaul, ageJohn int = rand.Intn(110), rand.Intn(110)
-	fmt.Println("John is", ageJohn , "years old")
-	fmt.Println("Paul is", agePaul , "years old")
+// func age_of_person(){
+// 	var agePaul, ageJohn int = rand.Intn(110), rand.Intn(110)
+// 	fmt.Println("John is", ageJohn , "years old")
+// 	fmt.Println("Paul is", agePaul , "years old")
 
-	if agePaul > ageJohn {
-		fmt.Println("Paul is older than John")}
-	fmt.Println("End of the Program")	
+// 	if agePaul > ageJohn {
+// 		fmt.Println("Paul is older than John")}
+// 	fmt.Println("End of the Program")	
 	// 	else {
 	// 	// ANOTHER IF/ELSE STRUCTURE
 	// 	if agePaul == ageJohn {
@@ -47,15 +50,15 @@ func age_of_person(){
 	// }
 }
 
-func email_send(){
-	const emailToSend = 4
-	emailSent := 0
-	for emailSent < emailToSend {
-		fmt.Println("Sending email...")
-		emailSent++
-	}
-	fmt.Println("end of program")
-}
+// func email_send(){
+// 	const emailToSend = 4
+// 	emailSent := 0
+// 	for emailSent < emailToSend {
+// 		fmt.Println("Sending email...")
+// 		emailSent++
+// 	}
+// 	fmt.Println("end of program")
+// }
 
 func assignment(){
 	const no_of_rooms = 134
@@ -78,3 +81,7 @@ func assignment(){
 		fmt.Println("High")
 	}
 }
+
+// func computePrice(rate float32, nights int) float32 {
+// 	return rate * float32(nights)
+// }
