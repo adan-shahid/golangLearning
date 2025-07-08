@@ -29,8 +29,12 @@ func age_of_person(){
 	var agePaul, ageJohn int = rand.Intn(110), rand.Intn(110)
 	fmt.Println("John is", ageJohn , "years old")
 	fmt.Println("Paul is", agePaul , "years old")
-	fmt.Println("It is", ageJohn > agePaul, "that John is older than Paul")
-	fmt.Println("It is", ageJohn == agePaul, "that John and Paul have the same age.")
+
+	if agePaul > ageJohn {
+		fmt.Println("Paul is older than John")
+	} else {
+		fmt.Println("Paul is younger than John, or both have the same age")
+	}
 }
 
 // TO PRINT A NUMBER IN BASE 10
